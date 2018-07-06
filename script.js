@@ -15,7 +15,3 @@ class Employee {
     }
   }
   
-
-  let manager = new Employee();
-  let designer = new Employee();
-  let salesAssociate = new Employee();
