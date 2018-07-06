@@ -21,7 +21,7 @@ class Employee {
           super(name, salary, hireDate);
           this.jobDescription = jobDescription;
       }
-      jobDescription() {
+      jobDescription(descriptionOfJob) {
           console.log(add a job description in line 25);
       }
   }
@@ -31,7 +31,7 @@ class Employee {
           super(name, salary, hireDate);
           this.yearsExperience = yearsExperience;
       }
-      yearsExperience () {
+      yearsExperience (experience) {
           console.log (add years experience to line 35);
       }
   }
@@ -41,9 +41,8 @@ class Employee {
             super(name, salary, hireDate);
             this.degreeCompleted = degreeCompleted;
         }
-        degreeCompleted (){
+        degreeCompleted (degrees){
             console.log(add a degree completed to line 45);
         }
 
   }
-
