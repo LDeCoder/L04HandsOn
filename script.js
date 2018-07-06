@@ -22,7 +22,7 @@ class Employee {
           this.jobDescription = jobDescription;
       }
       jobDescription(descriptionOfJob) {
-          console.log(add a job description in line 25);
+          console.log(use THIS name, hire date, salary and their job description - add a job description in line 25);
       }
   }
 
@@ -32,7 +32,7 @@ class Employee {
           this.yearsExperience = yearsExperience;
       }
       yearsExperience (experience) {
-          console.log (add years experience to line 35);
+          console.log ( USE THIS name, hire date, salary and their years of experience - add years experience to line 35);
       }
   }
 
@@ -42,7 +42,8 @@ class Employee {
             this.degreeCompleted = degreeCompleted;
         }
         degreeCompleted (degrees){
-            console.log(add a degree completed to line 45);
+            console.log(USE THIS name, hire date, salary and the degree they have completed - add a degree completed to line 45);
         }
 
   }
+  
