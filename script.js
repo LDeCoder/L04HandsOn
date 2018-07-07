@@ -23,7 +23,7 @@ class Employee {
   billy.getSalary();
   june.getHireDate();
 
-  
+
 class NewEmployee extends Employee {
         constructor(position, name, salary, hireDate) {
             super(name, salary, hireDate);
