@@ -14,51 +14,38 @@ class Employee {
       console.log(this.hireDate);
     }
   }
-  
 
-  class Manager extends Employee {
-      constructor(jobDescription, name, salary, hireDate) {
-          super(name, salary, hireDate);
-          this.jobDescription = jobDescription;
-      }
-      descriptionOfJob(){
-          console.log(this.name + " was hired on " + this.hireDate + " and makes " + this.salary + " because " + this.jobDescription);
-  }
-  
-  class Designer extends Employee {
-      constructor(yearsExperience, name, salary, hireDate) {
-          super(name, salary, hireDate);
-          this.yearsExperience = yearsExperience;
-      }
-      Experience() {
-          console.log (this.name + " was hired on " + this.hireDate + " and makes " + this.salary + " because " + this.yearsExperience);
-      }
-  }
+  let sally = new Employee("Sally", 25000, "5/25/2018");
+  let billy = new Employee("Billy", 30000, "6/10/2018");
+  let june = new Employee("June", 23000, "7/1/2018");
 
-  class salesAssociate extends Employee {
-        constructor(degreeCompleted, name, salary, hireDate) {
+  sally.getName();
+  billy.getSalary();
+  june.getHireDate();
+
+  
+class NewEmployee extends Employee {
+        constructor(position, name, salary, hireDate) {
             super(name, salary, hireDate);
-            this.degreeCompleted = degreeCompleted;
-        }
+            this.position = position;
+    }       
+        descriptionOfJob() {
+            console.log("Hi! My name is " + this.name + ", and I am excited to make " + this.salary + ", as your new " + this.position + "!");
+    }
+        
+        Experience() {
+            console.log ("Meet, " + this.name + ", our graphics " + this.position + ", who has been designing for 15 years!");
+    }
         Degree() {
-            console.log (this.name + " was hired on " + this.hireDate + " and makes " + this.salary + " because " + this.degreeCompleted);
-
+            console.log ("This is our newest " + this.position + ", " + this.name + ", who was hired because she has a masters in sales!");
   }
+
 }
-  
-  let Fred = new Manager("he is everyone's boss.", "Fred Flintstone", 99000, "8/1/2005");
-  let Barney = new Designer("he has been here for 20 years!", "Barney Rubble" , 75000, "3/15/2008");
-let Betty = new salesAssociate("she has a masters in sales!", "Betty Rubble", 50000, "2/1/2015");
 
+let employee1 = new NewEmployee ("manager", "Fred Flintstone", 100000, "6/1/2018");
+let employee2 = new NewEmployee ("designer", "Barney Rubble" , 75000, "6/15/2018");
+let employee3 = new NewEmployee ("Sales Associate", "Betty Rubble", 50000, "7/1/2018");
 
-
-Fred.descriptionOfJob();
-Barney.Experience();
-Betty.Degree();
-
-
-
-
-
-//   - [ ] Lastly, using each of the new instances, call each of the methods that live within the respective subclasses so you can see each of the console.logs in your console.
-//     - [ ] Use the http-server to run this project
+employee1.descriptionOfJob();
+employee2.Experience();
+employee3.Degree();
